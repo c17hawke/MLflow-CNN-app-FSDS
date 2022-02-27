@@ -1,4 +1,4 @@
-### dependency
+### dependency to be installed
 tqdm
 mlflow
 pandas
