@@ -28,6 +28,7 @@ def save_json(path: str, data: dict) -> None:
 
 def unzip_file(source: str, dest: str) -> None:
     logging.info(f"extraction started...")
+
     with ZipFile(source, "r") as zip_f:
         zip_f.extractall(dest)
     logging.info(f"extracted {source} to {dest}")
