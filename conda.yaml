@@ -61,4 +61,4 @@ dependencies:
     - werkzeug==2.0.3
     - zipp==3.7.0
     - Pillow==9.0.1
-
+    - tensorflow==2.8.0
