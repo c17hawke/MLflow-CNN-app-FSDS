@@ -7,6 +7,10 @@ from src.utils.common import read_yaml, create_directories
 
 STAGE = "MAIN" ## <<< change stage name 
 
+create_directories(["logs"])
+with open(os.path.join("logs", 'running_logs.log'), "w") as f:
+    f.write("")
+
 logging.basicConfig(
     filename=os.path.join("logs", 'running_logs.log'), 
     level=logging.INFO, 
