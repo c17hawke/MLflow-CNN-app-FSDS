@@ -7,3 +7,11 @@ data:
   unzip_data_dir: data
   bad_data_dir: bad_data
   parent_data_dir: PetImages
+  model_dir: model
+  init_model_file: init_model.h5
+
+params:
+  img_shape: [180,180,3]
+  lr: 0.001
+  loss: sparse_categorical_crossentropy
+  metrics: ["accuracy"]
