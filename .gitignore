@@ -143,5 +143,6 @@ data.zip
 PetImages
 logs/running_logs.log
 data/MSR-LA - 3467.docx
-data/readme[1].txt
+data/readme*
 data/bad_data
+data/model/init_model.h5
