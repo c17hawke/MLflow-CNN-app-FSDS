@@ -146,3 +146,4 @@ data/MSR-LA - 3467.docx
 data/readme*
 data/bad_data
 data/model/init_model.h5
+data/model/trained_model.h5
