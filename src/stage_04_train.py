@@ -6,6 +6,7 @@ import logging
 from src.utils.common import read_yaml, create_directories
 import random
 import tensorflow as tf
+import mlflow
 
 STAGE = "Training" ## <<< change stage name 
 
@@ -76,6 +77,9 @@ def main(config_path):
     classifier.save(trained_model_file)
     logging.info(f"trained model is saved at : {trained_model_file}")
 
+    with mlflow.start_run() as runs:
+        mlflow.log_params(params)
+        mlflow.keras.log_model(classifier, "model")
     
 
 if __name__ == '__main__':
